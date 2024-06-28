@@ -16,8 +16,8 @@ input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
     serial.writeLine("stoppe Aufzeichnung")
     monitoring = 0
     led.unplot(1, 3)
-    led.enable(false)
     basic.turnRgbLedOff()
+    led.enable(false)
 })
 let monitoring = 0
 serial.writeLine("gestartet")
